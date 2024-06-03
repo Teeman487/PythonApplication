@@ -1,0 +1,369 @@
+AGENDA
+*************
+1. Introduction to Python:
+a. Python is a high level object oriented scripting language
+b. Python is open source language
+c  Platform independent
+
+2. Python Features:
+a. Python is Interpreted: Each and every line of code will be verified, exception will be thrown if there ia an issue
+in that line.
+   In case of Java - Java uses compiler- all lines of code will be executed at once and throw all the exception
+b Python is Interactive
+c. Python is Object Oriented
+d. Python is a Beginner's language
+
+HISTORY OF PYTHON
+In December 1989 by Guido Van Rossum at CWI in Netherland
+In February 1991, Van Rossum published the code (0.90)
+In 1994, Python 1.0 was released with new features like: lambda, map, filter and reduce
+Python 2.0 added new features like: list comprehensions, garbage collection system.
+On Dec3 2008, Python 3.0 (Also called "Py3k") was released.
+Python influenced by - ABC language
+                     - Modula - 3
+
+                     Python Used In Various Applications
+1. Web Development   2. Testing    3. Data Analysis    4. Data Science   5. Artificial Intelligence  6. Machine Learning
+
+                                    To Display "Hello World"
+ Python                                                                        C
+ print("Hello World!")                                                    # include<stdio.h>
+                                                                          int main()
+                                                                          {
+                                                                            printf("Hello World!");
+                                                                            return 0;
+                                                                          }
+
+  C++                                                                           Java
+  #include <iostream>                                               public class HelloWorld{
+  using namespace std;                                              public static void main(Strings[] args) {
+  int main()                                                        System.out.println("Hello World!");
+  {
+    cout<<"Hello World!";                                                }
+    return 0;
+  }
+
+                         Ways to Use Python
+ 1. Python.exe file   - Default shell
+ 2. IDLE (Python shell) - Command prompt
+ 3. Windows Command Prompt (cmd) | Windows Env Variable
+ 4. Notepad - We are running the file in cmd
+ 5. Python online compiler
+
+
+
+Variables....
+A variable is nothing but a reserved memory location to store values
+Variables are used to store the data
+Memory allocated when the values are stores in variables
+Every variable must have some type.
+
+old version of print is print without ()
+
+Data Types...
+Numbers  --> int  float
+String
+List
+Tuple
+Dictionary
+Boolean
+
+Concatenation..
+We concat 2 same types, but we cannot concat 2 different types
+
+print(10+10) # valid
+
+Input() & raw_input()
+Getting input from the end-user python2 vs python3:
+- Python 2.x
+- input function: Takes any type of data
+- raw_input function: Takes only string data
+
+- Python 3.x
+- Input function: Takes only string data
+
+Note:
+- In Python 3.x, 'raw_input()' is changed to 'input()'. Thus, 'input()' of Python 3 will behave as 'raw_input() of Python 2.x'
+
+
+Formatting Output
+Formatting data with the % & {}
+%d int
+%s string
+%f(or) %g float
+
+Flow Control Statement in Python
+- Conditional Statements
+- Iterative Statements(Loops)  --> for loop  ; while loop
+- Jumping statements(Transfer statements) --> break  ; continue
+
+Strings in python are immutable
+-Once string is created it cant be modified(immutable)
+- id() : Every object in python is stored somewhere in memory. We can use id() tp get that memory address.
+str="welcome"
+str2="welcome"
+print(id(str1),id(str2))
+
+In python: variables/strings are immutable
+
+Slicing string
+We can take subset of string from original string by using [] operator also known a slicing operator
+Syntax:s[start:end]
+this will return part of the sting starting from index start to index end -1
+str="welcome"
+
+Ord() and chr() Functions
+- ord() - fnction returns the ASCII code of the character.
+- chr() - function returns character represented by a ASCII number
+print(ord('A')) #65
+print(chr(65)) #A
+
+List in Python
+- List type is another sequence type defined by the list class of python
+- List allows you add, delete or process elements in very simple ways
+- List is very similar to arrays
+
+
+#What is Dictionary
+- Dictionary is a python data type that is used to store key value pairs
+- It enables you to quickly retrieve, add, remove, modify, values using key
+- Dictionary is very similar to HashMap in Java
+- Dictionaries are mutable
+- created using ({})
+- each item separated using commas(,)
+- Key must be of hashable type, but value can be of any type. Each key in the
+dictionary must be unique
+
+Tuples
+- Tuples are very similar to list but once a tuple is created, you cannot add, delete, replace, reorder elements
+- Tuples are immutable
+
+
+List                       Dictionaries                   Tuples
+List=[10,12,14]          Dict={"John":26, "Mary":30}      Tup1=("10,20,30") or Tup2=10,20,30  or Tup3 =("John","Scott") or Tup4="John",Scott"
+print(List[0])           print(Dict["Mary"])               print(Tup1[0])
+Allow duplicates        Duplicates Keys Not allowed        Allow duplicates
+                        but duplicate Values allowed        Faster than Lists
+List[0]=100             Dict["John"]=35                     Tuple1[0]=100 #Type error
+Mutable                     Mutable                       Immutable-Values cant changed once assigned
+[]                           {}                                 ()
+Slicing can be done       Slicing cant be done                Slicing can be done
+List=[10,20,30]                                              tup=(10,20,30,40,50)
+print(List[1:2])#[20]                                         print(tup[1:4]) #(20,30,40)
+
+Usage: use lists if            When you need a logical             Use tuples when your data cannot change.
+you have a collection of       association between Key:value      A tuple is used in combination with a dictionary, for
+data that doesnt need random   pair. When you need fast lookup    example a tuple might represent a Key, because its immutable
+access.                         for your data based on a custom
+Use lists when you need a        key
+simple, iterable collection
+that is modified frequently
+
+Functions: are the the re-usable pieces of code which helps us to organize structure of the code.
+- We create functions so that we can run a set of statements multiple times during in the program without repeating ourselves
+
+
+Global variables: Variables that are not bound to any function, but can be accessed inside as well as outside the function
+Local variable: Variables which are declared inside a function
+
+Passing Arguments the Method
+- Argument with default values(positional)
+- Keyword arguments
+- Mixing Positional and Keyword Arguments
+
+Returning multiple values from function
+- We can return multiple values fro function using the return statement them with a comma(,)
+Multiple values are returned as tuples
+
+File Handling
+We can use File handling to read and write data to and fro the file
+- File Operations
+ - Opening a File
+ - Closing a File
+ - Writing data in to file
+ - Reading data from a file
+ - Appending data
+ - Looping through the data using for loop
+
+- Before reading/writing you first need to open the file --- f=open(filename,mode)
+- After you have finished reading/writing to the file you need to close the file using close()
+f.close()  # where f is a file pointer
+
+Modes            Description
+"r"             Open a file for read only
+"w"             Open a file for writing, if file already exists its data will be cleared b4 opening. Otherwise new file will be created
+"a"              Opens a file in append mode i.e to write a data to the end of the file
+
+
+Class & Object
+- Class is a logical entity which contains logic
+class contains variables and methods
+Logic should be included within a method
+An Object is physical entity which is created for a class
+We can create any number of objects for a class
+
+
+
+__init__  invokes at time of object creation
+__Str__    invoke when you print the reference variable
+__del__  executed when you destroy objects
+
+
+
+What is inheritance
+- Classes can inherit functionality of other classes
+- If an object is created using a class that inherits from a superclass
+- the object will contain the methods of both the class and the superclass
+- The same holds true for variables of both the superclass and the class that inherits from the super class
+
+Types of Inheritance
+single
+Multilevel
+Hierarchical
+Multiple
+Hybrid - Hierarchical + Multiple
+
+Super()
+Super() can be used in 3 ways
+- To invoke parent class methods
+- To invoke parent class variables
+- To invoke parent class constructor
+
+What is polymorphism?
+- Sometimes an object comes in many types or forms
+- if we have a button, there are many different draw outputs(round button, check button, square button, button with image)
+but they do share the same logic: onClick()
+- We access them using the same method
+
+Method overriding  - Dynamic polymorphism
+- Override means having  two methods with same name but doing different tasks
+- It means that one of the methods overrides the other
+- If there is any method in the superclass and a method with the same name in a subclass,then
+by executing the method, the method of the corresponding class will be executed
+
+
+Method Overloading  - Static Polymorphism
+- In Python you can define a method in such a way that there are multiple ways to call it
+- Given a single method or function, we can specify the number of parameters our self
+
+Encapsulation
+- In an object oriented python program, you can restrict access to methods and variables
+- This can prevent the data from being modified by accident
+- Encapsulation can be achieved using private variables and private methods
+
+public methods: Accessible from anywhere
+private methods: Accessible only in their own class. starts with two underscores
+public variables: Accessible from anywhere
+private variables:  Accessible only in their own class or by a method if defined. starts with twoo underscores
+
+Abstract Class
+- Abstract classes are classes that contain one or more abstract methods
+- An abstract method is a method that is declared, but contains no implementation
+- Abstract classes cannot not be instantiated, and require subclasses to provide implementations
+for the abstract methods.
+- Subclasses of an abstract class in Python are not required to implement
+abstract methods of the parent class
+
+
+
+
+
+Modules: Module is a python file(.py) containing a set of functions you want to include in your application
+A module content are accessed with import statement
+
+Package: is a folder which consists of modules and sub packages
+- we can access Modules from package using below syntax
+
+import sys
+sys.path.append("path of the package")
+
+Error: its a programming mistake or syntax errors
+Error ==>   Syntax Error()    |   Logical Error(incorrect output)
+
+
+
+Exceptions: Exception is an abnormal : occurs based on invalid user inputs
+- Exception is an event that disrupts the normal flow of te program
+
+Exception Handling Keywords
+- try
+- except
+- else
+- finally
+
+in Python all exceptions can be considered Error
+
+
+try:
+    # write some code
+    # that might throw exception
+except <ExceptionType>
+    # Exception handler, alert the user
+
+try:
+except    :
+except    :
+except    :
+else:
+finally:
+
+Statement under the else clause run only when no exception is raised
+
+Statements in finally block will run every time no matter exception ocuurs or not
+
+
+
+Raising Exceptions
+- To raise your exceptions from your own methods you need to use raise keyword like this
+
+ raise ExceptionClass("Your argument")
+
+
+ Using Excepton objects
+
+ try:
+
+ except NameError as ex:
+     print("Exception:", ex)
+
+
+
+ Lambda Function
+ - A function which has no name
+ - This is also known as anonymous function
+ - A lambda function can take any number or arguments, but can only
+ have one expression
+ - Syntax
+     lambda arguments : expression
+
+ Python *args and **kwargs
+
+ What is *args?
+ *args allows us to pass variable number of arguments to the function
+
+ def sum(a,b):
+    print("sum is", a+b)
+ this program only accepts two numbers, what if you want to pass more than two arguments, this is where *args comes into play
+
+
+Not: name of *args is just a convention you can use anything that is valid identifier. For e.g *myagrs
+You can use *args to pass elements in an iterable variable to a function
+ex
+  def my_three(a,b,c)
+      print(a,b,c)
+  a = [1,2,3]
+  my_three(*a)   # here list is broken into three elements
+
+  Not:  This works only when number of arguments is same as number of elements in the iterable variable
+
+
+
+
+
+
+
+ **Kwargs allows us to pass variable number of keyword argument like this
+ func_name(name='tim',team='school')
+
+
+
